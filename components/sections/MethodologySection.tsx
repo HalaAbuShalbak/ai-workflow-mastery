@@ -3,9 +3,7 @@
 import { useTranslations } from "next-intl";
 import { ClipboardCheck, Presentation, Users } from "lucide-react";
 import { MotionReveal } from "@/components/animations/MotionReveal";
-import { buttonVariants } from "@/components/ui/button";
-import { SITE, SECTION_IDS } from "@/lib/constants";
-import { cn } from "@/lib/utils";
+import { SECTION_IDS } from "@/lib/constants";
 
 export function MethodologySection() {
   const t = useTranslations("methodology");
@@ -40,20 +38,9 @@ export function MethodologySection() {
                   {t("pre.title")}
                 </h3>
               </div>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-[#94A3B8]">
+              <p className="mt-4 text-sm leading-relaxed text-[#94A3B8]">
                 {t("pre.description")}
               </p>
-              <a
-                href={SITE.preAssessmentUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={cn(
-                  buttonVariants({ size: "lg" }),
-                  "mt-6 inline-flex w-full border-0 bg-gradient-to-r from-blue-500 to-cyan-400 text-[#020617] hover:opacity-95 sm:w-auto",
-                )}
-              >
-                {t("pre.cta")}
-              </a>
             </article>
           </MotionReveal>
 
@@ -67,20 +54,9 @@ export function MethodologySection() {
                   {t("presentation.title")}
                 </h3>
               </div>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-[#94A3B8]">
+              <p className="mt-4 text-sm leading-relaxed text-[#94A3B8]">
                 {t("presentation.description")}
               </p>
-              <a
-                href={SITE.presentationUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={cn(
-                  buttonVariants({ variant: "outline", size: "lg" }),
-                  "mt-6 inline-flex w-full border-white/20 bg-transparent text-[#F8FAFC] hover:bg-white/5 sm:w-auto",
-                )}
-              >
-                {t("presentation.cta")}
-              </a>
             </article>
           </MotionReveal>
         </div>
@@ -148,17 +124,6 @@ export function MethodologySection() {
               {t("post.title")}
             </h3>
             <p className="mt-3 max-w-2xl text-sm text-[#94A3B8]">{t("post.description")}</p>
-            <a
-              href={SITE.postAssessmentUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(
-                buttonVariants({ size: "lg" }),
-                "mt-6 inline-flex border-0 bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 text-[#020617] hover:opacity-95",
-              )}
-            >
-              {t("post.cta")}
-            </a>
           </article>
         </MotionReveal>
       </div>

@@ -97,7 +97,6 @@ export type TestimonialEntry = {
   nameKey: string;
   roleKey: string;
   quoteKey: string;
-  span?: "sm" | "md" | "lg";
 };
 
 export const testimonialsData: TestimonialEntry[] = [
@@ -107,7 +106,6 @@ export const testimonialsData: TestimonialEntry[] = [
     nameKey: "testimonials.items.abuBakr.name",
     roleKey: "testimonials.items.abuBakr.role",
     quoteKey: "testimonials.items.abuBakr.quote",
-    span: "md",
   },
   {
     id: "maram",
@@ -115,7 +113,6 @@ export const testimonialsData: TestimonialEntry[] = [
     nameKey: "testimonials.items.maram.name",
     roleKey: "testimonials.items.maram.role",
     quoteKey: "testimonials.items.maram.quote",
-    span: "lg",
   },
   {
     id: "layan",
@@ -123,7 +120,6 @@ export const testimonialsData: TestimonialEntry[] = [
     nameKey: "testimonials.items.layan.name",
     roleKey: "testimonials.items.layan.role",
     quoteKey: "testimonials.items.layan.quote",
-    span: "md",
   },
 
   {
@@ -132,7 +128,6 @@ export const testimonialsData: TestimonialEntry[] = [
     nameKey: "testimonials.items.natali.name",
     roleKey: "testimonials.items.natali.role",
     quoteKey: "testimonials.items.natali.quote",
-    span: "sm",
   },
   {
     id: "aya",
@@ -140,7 +135,6 @@ export const testimonialsData: TestimonialEntry[] = [
     nameKey: "testimonials.items.aya.name",
     roleKey: "testimonials.items.aya.role",
     quoteKey: "testimonials.items.aya.quote",
-    span: "sm",
   },
  
   {
@@ -149,7 +143,6 @@ export const testimonialsData: TestimonialEntry[] = [
     nameKey: "testimonials.items.farah.name",
     roleKey: "testimonials.items.farah.role",
     quoteKey: "testimonials.items.farah.quote",
-    span: "sm",
   },
   {
     id: "mustafa",
@@ -157,17 +150,5 @@ export const testimonialsData: TestimonialEntry[] = [
     nameKey: "testimonials.items.mustafa.name",
     roleKey: "testimonials.items.mustafa.role",
     quoteKey: "testimonials.items.mustafa.quote",
-    span: "sm",
   },
-];
-
-export type StudentPersona = {
-  id: string;
-  variant: "weak" | "average" | "max";
-};
-
-export const studentPersonasData: StudentPersona[] = [
-  { id: "weak", variant: "weak" },
-  { id: "average", variant: "average" },
-  { id: "max", variant: "max" },
 ];

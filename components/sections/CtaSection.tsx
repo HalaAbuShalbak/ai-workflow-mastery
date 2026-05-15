@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { ArrowUpRight } from "lucide-react";
 import { MotionReveal } from "@/components/animations/MotionReveal";
 import { buttonVariants } from "@/components/ui/button";
 import { SITE, SECTION_IDS } from "@/lib/constants";
@@ -34,32 +33,17 @@ export function CtaSection() {
             {t("subtitle")}
           </p>
         </MotionReveal>
-        <MotionReveal
-          delay={0.08}
-          className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
-        >
+        <MotionReveal delay={0.08} className="mt-10 flex justify-center">
           <a
             href={SITE.workshopBookingUrl}
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
               buttonVariants({ size: "lg" }),
-              "h-11 min-w-[180px] border-0 bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 px-8 text-[#020617] shadow-[0_0_40px_-8px_rgba(59,130,246,0.55)] hover:opacity-95",
+              "h-11 min-w-[200px] border-0 bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 px-8 text-[#020617] shadow-[0_0_40px_-8px_rgba(59,130,246,0.55)] hover:opacity-95",
             )}
           >
             {t("book")}
-          </a>
-          <a
-            href={SITE.linkedIn}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(
-              buttonVariants({ variant: "outline", size: "lg" }),
-              "h-11 min-w-[180px] border-white/20 bg-transparent text-[#F8FAFC] hover:bg-white/5",
-            )}
-          >
-            {t("linkedin")}
-            <ArrowUpRight className="ms-1 size-4" />
           </a>
         </MotionReveal>
       </div>

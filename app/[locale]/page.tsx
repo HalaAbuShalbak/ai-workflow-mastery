@@ -7,9 +7,10 @@ import { ObjectivesSection } from "@/components/sections/ObjectivesSection";
 import { TopicsRoadmapSection } from "@/components/sections/TopicsRoadmapSection";
 import { WorkflowDemoSection } from "@/components/sections/WorkflowDemoSection";
 import { MethodologySection } from "@/components/sections/MethodologySection";
-import { StudentTypesSection } from "@/components/sections/StudentTypesSection";
+import { FaqSection } from "@/components/sections/FaqSection";
 import { InstructorSection } from "@/components/sections/InstructorSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { ConsultationSection } from "@/components/sections/ConsultationSection";
 import { CtaSection } from "@/components/sections/CtaSection";
 
 export default function HomePage() {
@@ -24,9 +25,10 @@ export default function HomePage() {
         <TopicsRoadmapSection />
         <WorkflowDemoSection />
         <MethodologySection />
-        <StudentTypesSection />
+        <FaqSection />
         <InstructorSection />
         <TestimonialsSection />
+        <ConsultationSection />
         <CtaSection />
       </main>
       <Footer />

@@ -13,6 +13,7 @@ const en = {
     topics: "Topics",
     methodology: "Methodology",
     testimonials: "Testimonials",
+    instructor: "Instructor",
     contact: "Contact",
     book: "Book Workshop",
     explore: "Explore Curriculum",
@@ -24,7 +25,7 @@ const en = {
     subtitle:
       "Learn how to use AI as a planning, revision, and workflow-thinking partner.",
     bullets: {
-      duration: "90-minute workshop",
+      duration: "120-minute workshop",
       level: "Beginner-friendly",
       practical: "Practical workflows",
       scenarios: "Real planning scenarios",
@@ -209,35 +210,53 @@ const en = {
       cta: "Complete Final Assessment",
     },
   },
-  studentTypes: {
-    eyebrow: "Adaptive pacing",
-    title: "Different student types, one workshop",
-    weak: {
-      title: "Emerging learners",
-      features: [
-        "Granular task breakdown",
-        "Guided prompt scaffolds",
-        "Structured assistance checkpoints",
-        "Follow-up reflection questions",
-      ],
-    },
-    average: {
-      title: "Comfortable builders",
-      features: [
-        "Stretch challenge questions",
-        "Strategic hints on demand",
-        "Moderate independence with safety rails",
-      ],
-    },
-    max: {
-      title: "Advanced practitioners",
-      features: [
-        "Open exploration briefs",
-        "No hints — force judgment calls",
-        "Advanced multi-step challenges",
-        "Curated extension resources",
-      ],
-    },
+  faq: {
+    eyebrow: "FAQ",
+    title: "Frequently asked questions",
+    subtitle:
+      "Answers to help you decide if this workshop fits — and how we support every learner in the room.",
+    items: [
+      {
+        question: "Who is this workshop for?",
+        answer:
+          "Beginners with little or no technical background, senior IT students translating classroom knowledge into real planning habits, and early professionals who want to move faster without outsourcing judgment. If you work with tasks, plans, or deliverables, you belong here.",
+      },
+      {
+        question: "Do I need prior AI or coding experience?",
+        answer:
+          "No. The workshop is beginner-friendly and starts from workflow intuition — how to plan, revise, critique, and validate — not tool jargon or memorized commands. You will learn prompting as a control surface for your work, not as a separate technical specialty.",
+      },
+      {
+        question: "I'm just starting with AI — will I be left behind?",
+        answer:
+          "No. Emerging learners get granular task breakdown, guided prompt scaffolds, structured assistance checkpoints, and follow-up reflection questions so you can build confidence step by step with facilitator support.",
+      },
+      {
+        question: "I already use AI regularly — will I still benefit?",
+        answer:
+          "Yes. Comfortable builders work through stretch challenges and strategic hints on demand. Advanced practitioners get open exploration briefs, multi-step challenges without hand-holding, and curated extension resources — so you are pushed to make judgment calls, not repeat basics.",
+      },
+      {
+        question: "How long is the workshop and what is the format?",
+        answer:
+          "It runs 120 minutes with practical, real planning scenarios. You will move through interactive pre- and post-assessments, a live presentation with annotated workflows, performance-based exercises in breakout groups, and structured peer feedback — measurable from start to finish.",
+      },
+      {
+        question: "How is this different from a typical AI tips session?",
+        answer:
+          "Most workshops focus on tool demos, command memorization, and one-off prompts. This experience teaches workflow systems thinking: planning and revision loops, operational reasoning, and AI-assisted execution you can repeat on real projects — with verification baked in.",
+      },
+      {
+        question: "What will I walk away with?",
+        answer:
+          "You will understand what prompts actually control, how tasks chain into workflows, how to spot weak vs. strong prompts, and how to build lightweight AI-assisted planning systems for roadmaps, specs, and retrospectives. The capstone ties it together in a repeatable plan → prompt → revise → validate loop.",
+      },
+      {
+        question: "What topics are covered?",
+        answer:
+          "Defining prompting and multimodal input; AI workflows vs. single tasks; chain-of-thought and few-shot techniques; factuality, verification, and revision; and a capstone on building your own doing-and-revising plan you can reuse after the session.",
+      },
+    ],
   },
   instructor: {
     eyebrow: "Instructor",
@@ -263,10 +282,15 @@ const en = {
     },
     imageAlt:
       "Portrait of Hala Abu Shalbak — technical trainer, product thinker, and AI workflow educator",
+    linkedin: "Connect on LinkedIn",
   },
   testimonials: {
     eyebrow: "Social proof",
     title: "What collaborators say",
+    paginationLabel: "Testimonial pages",
+    pageLabel: "Go to page {page}",
+    readMore: "Read more",
+    readLess: "Read less",
     items: {
       abuBakr: {
         name: "Abu Bakr Soliman, MSc",
@@ -316,12 +340,30 @@ const en = {
       },
     },
   },
+  consultation: {
+    eyebrow: "Free consultation",
+    title: "Request a free 30-minute session",
+    subtitle:
+      "Map one real task within your project through a plan → prompt → revise → validate loop. Fill in the form to request the consultation.",
+    name: "Full name",
+    email: "Email",
+    status: "Current status",
+    statusStudent: "Student",
+    statusEmployee: "Employee",
+    field: "Major / job title",
+    fieldPlaceholder: "e.g. Computer science, product manager",
+    project: "Project description (optional)",
+    projectPlaceholder: "What workflow or project do you want help with?",
+    projectNotProvided: "Not provided",
+    submit: "Request Session",
+    whatsappMessage:
+      "Hello,\n\nMy name is {name}\n\nMy email is {email}\n\nI am currently {status} in the field of {field}\n\nMy project is about {project}\n\nI want to request a free consultation session for my workflow",
+  },
   cta: {
     title: "Learn how to think through workflows with AI — not just use AI",
     subtitle:
       "Practical, execution-focused, and built for how modern teams actually ship — with verification baked in.",
     book: "Book Workshop",
-    linkedin: "Connect on LinkedIn",
   },
   footer: {
     rights: "© {year} Prompting For Planning Workflows",

@@ -12,6 +12,7 @@ const footerLinks = [
   { id: SECTION_IDS.topics, labelKey: "nav.topics" as const },
   { id: SECTION_IDS.methodology, labelKey: "nav.methodology" as const },
   { id: SECTION_IDS.testimonials, labelKey: "nav.testimonials" as const },
+  { id: SECTION_IDS.instructor, labelKey: "nav.instructor" as const },
   { id: SECTION_IDS.contact, labelKey: "nav.contact" as const },
 ];
 
@@ -41,7 +42,7 @@ export function Footer() {
             className="inline-flex items-center gap-2 text-[#CBD5E1] transition-colors hover:text-[#22D3EE]"
           >
             <ExternalLink className="size-4" aria-hidden />
-            LinkedIn
+            Instructor's LinkedIn
           </a>
           <div
             className="flex items-center gap-1 rounded-lg border border-white/10 p-0.5"

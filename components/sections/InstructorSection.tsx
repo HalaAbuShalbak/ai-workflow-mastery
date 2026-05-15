@@ -3,17 +3,24 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { MotionReveal } from "@/components/animations/MotionReveal";
+import { ArrowUpRight } from "lucide-react";
 import { metricsData, experienceHighlightsData } from "@/lib/data";
+import { SECTION_IDS, SITE } from "@/lib/constants";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 
 export function InstructorSection() {
   const t = useTranslations("instructor");
 
   return (
-    <section className="border-t border-white/5 bg-[#020617] py-20 sm:py-28">
+    <section
+      id={SECTION_IDS.instructor}
+      className="scroll-mt-24 border-t border-white/5 bg-[#020617] py-20 sm:py-28"
+    >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <MotionReveal>
+          <MotionReveal className="flex flex-col items-center gap-6 lg:items-start lg:justify-center">
             <figure className="relative mx-auto aspect-square w-full max-w-[420px] overflow-hidden rounded-2xl border border-white/10 bg-[#020617] shadow-[0_0_80px_-24px_rgba(59,130,246,0.45)] ring-1 ring-white/5 lg:mx-0">
               <Image
                 src="/images/instructor-portrait.png"
@@ -27,6 +34,18 @@ export function InstructorSection() {
                 aria-hidden
               />
             </figure>
+            <a
+              href={SITE.linkedIn}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                buttonVariants({ variant: "outline", size: "lg" }),
+                "inline-flex  w-full max-w-[420px] border-0 bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 text-[#020617] shadow-[0_0_32px_-8px_rgba(59,130,246,0.5)] hover:opacity-95 sm:w-auto",
+              )}
+            >
+              {t("linkedin")}
+              <ArrowUpRight className="ms-1 size-4" aria-hidden />
+            </a>
           </MotionReveal>
           <div className="space-y-6">
             <MotionReveal delay={0.05}>

@@ -2,6 +2,7 @@ export const SITE = {
   name: "Prompting For Planning Workflows",
   url: "https://prompt-planning-workshop.example.com",
   linkedIn: "https://www.linkedin.com/in/halaabushalbak/",
+  whatsAppNumber: "962782063863",
   workshopBookingUrl: "https://www.linkedin.com/in/halaabushalbak/",
   preAssessmentUrl:
     "https://www.mentimeter.com/app/presentation/alrsfvuun2whuzztxzw21ypijbgibbyq/edit?source=share-modal",
@@ -16,5 +17,7 @@ export const SECTION_IDS = {
   topics: "topics",
   methodology: "methodology",
   testimonials: "testimonials",
+  instructor: "instructor",
+  consultation: "consultation",
   contact: "contact",
 } as const;

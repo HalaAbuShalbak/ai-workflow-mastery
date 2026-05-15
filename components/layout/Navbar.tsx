@@ -15,6 +15,7 @@ const navKeys = [
   { id: SECTION_IDS.topics, labelKey: "nav.topics" as const },
   { id: SECTION_IDS.methodology, labelKey: "nav.methodology" as const },
   { id: SECTION_IDS.testimonials, labelKey: "nav.testimonials" as const },
+  { id: SECTION_IDS.instructor, labelKey: "nav.instructor" as const },
   { id: SECTION_IDS.contact, labelKey: "nav.contact" as const },
 ];
 
