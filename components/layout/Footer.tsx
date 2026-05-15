@@ -42,7 +42,7 @@ export function Footer() {
             className="inline-flex items-center gap-2 text-[#CBD5E1] transition-colors hover:text-[#22D3EE]"
           >
             <ExternalLink className="size-4" aria-hidden />
-            Instructor's LinkedIn
+            Instructor&apos;s LinkedIn
           </a>
           <div
             className="flex items-center gap-1 rounded-lg border border-white/10 p-0.5"
