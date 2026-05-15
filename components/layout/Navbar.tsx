@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { SECTION_IDS } from "@/lib/constants";
+import { SECTION_IDS, SITE } from "@/lib/constants";
 import { usePathname, useRouter } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
@@ -107,7 +107,13 @@ export function Navbar() {
           <Button
             size="lg"
             className="hidden border-0 bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 text-[#020617] shadow-[0_0_24px_-4px_rgba(59,130,246,0.55)] hover:opacity-95 sm:inline-flex"
-            onClick={() => scrollTo(SECTION_IDS.contact)}
+            render={
+              <a
+                href={SITE.workshopBookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+            }
           >
             {t("nav.book")}
           </Button>
@@ -142,7 +148,13 @@ export function Navbar() {
             ))}
             <Button
               className="mt-2 border-0 bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 text-[#020617]"
-              onClick={() => scrollTo(SECTION_IDS.contact)}
+              render={
+                <a
+                  href={SITE.workshopBookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              }
             >
               {t("nav.book")}
             </Button>

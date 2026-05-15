@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MotionReveal } from "@/components/animations/MotionReveal";
-import { SECTION_IDS } from "@/lib/constants";
+import { SECTION_IDS, SITE } from "@/lib/constants";
 import { HeroWorkflow } from "@/components/sections/HeroWorkflow";
 import Aurora from "@/components/animations/Aurora";
 
@@ -72,7 +72,13 @@ export function HeroSection() {
               <Button
                 size="lg"
                 className="h-11 border-0 bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 px-6 text-[#020617] shadow-[0_0_28px_-6px_rgba(59,130,246,0.55)] hover:opacity-95"
-                onClick={() => scrollTo(SECTION_IDS.contact)}
+                render={
+                  <a
+                    href={SITE.workshopBookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  />
+                }
               >
                 {t("hero.ctaPrimary")}
               </Button>
